@@ -1,0 +1,25 @@
+{
+    "log": [
+        {
+            "sent": "0",
+            "received": true,
+            "receive_delay": 0.8471121788024902,
+            "decoded": false,
+            "decode_delay": 0.6861803531646729
+        },
+        {
+            "sent": "1",
+            "received": true,
+            "receive_delay": 0.5979723930358887,
+            "decoded": false,
+            "decode_delay": 0.8540539741516113
+        },
+        {
+            "sent": "2",
+            "received": true,
+            "receive_delay": 0.7240161895751953,
+            "decoded": false,
+            "decode_delay": 0.6895031929016113
+        }
+    ]
+}
