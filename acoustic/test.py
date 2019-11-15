@@ -59,7 +59,7 @@ def test(protocol, chirps):
             }
         print('sending {}'.format(data))
         timeSent = time.time()
-        playsound(chirp, block=True) #cannot play async
+        playsound(chirp, block=True) #async playback not supported on linux for some reason
         time.sleep(1) 
         log.append(current)
     
@@ -89,8 +89,8 @@ def loadChirps(protocol='standard', num=10, shuffle=False):
     
 
 def main(): 
-    chirps = loadChirps('standard', 3, shuffle=False)
-    test('standard', chirps)
+    chirps = loadChirps(protocol='ultrasonic', num=50, shuffle=True)
+    test(protocol='ultrasonic', chirps)
 
 if __name__ == '__main__':
     main()
